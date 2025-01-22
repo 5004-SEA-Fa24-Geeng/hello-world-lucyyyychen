@@ -7,8 +7,9 @@ import static org.junit.jupiter.api.Assertions.assertNotEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import java.util.List;
-
-
+// Running App from Terminal
+// cd build/classes/java/main
+// java student/AlohaWorld  // without .class at the end
 
 
 /**
