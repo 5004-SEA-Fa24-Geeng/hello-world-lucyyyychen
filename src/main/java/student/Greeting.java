@@ -8,19 +8,19 @@ package student;
  */
 public class Greeting {
     // Fields
-    /** the ID of the locality in which the greeting used */
+    /** the ID of the locality in which the greeting used. */
     private int localityID;
 
-    /** the name of the locality in which the greeting used */
+    /** the name of the locality in which the greeting used. */
     private String localityName;
 
-    /** the ascii greeting which is used for the locality */
+    /** the ascii greeting which is used for the locality. */
     private String asciiGreeting;
 
-    /** the uni-code greeting which is used for the locality */
+    /** the uni-code greeting which is used for the locality. */
     private String unicodeGreeting;
 
-    /** the format string with the greeting inserted into the format */
+    /** the format string with the greeting inserted into the format. */
     private String formatStr;
 
     // Constructors
