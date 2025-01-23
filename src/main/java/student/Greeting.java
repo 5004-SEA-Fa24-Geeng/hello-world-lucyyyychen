@@ -1,17 +1,26 @@
 package student;
 
 /**
- * This class is a place holder which you will fully implement based on the javadoc
- * 
+ * This class is a place holder which you will fully implement based on the javadoc.
+ *
  * https://cs5004-khoury-lionelle.github.io/hello_world/student/package-summary.html
- * 
+ *
  */
 public class Greeting {
     // Fields
+    /* the ID of the locality in which the greeting used */
     private int localityID;
+
+    /* the name of the locality in which the greeting used */
     private String localityName;
+
+    /* the ascii greeting which is used for the locality */
     private String asciiGreeting;
+
+    /* the uni-code greeting which is used for the locality */
     private String unicodeGreeting;
+
+    /* the format string with the greeting inserted into the format */
     private String formatStr;
 
     // Constructors
@@ -21,7 +30,7 @@ public class Greeting {
      * @param localityID the ID of the locality in which the greeting used
      * @param localityName the name of the locality in which the greeting used
      */
-    public Greeting(int localityID, String localityName){
+    public Greeting(int localityID, String localityName) {
         this(localityID, localityName, "Hello");
     }
 
