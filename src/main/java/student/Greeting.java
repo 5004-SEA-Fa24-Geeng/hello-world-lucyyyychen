@@ -8,19 +8,29 @@ package student;
  */
 public class Greeting {
     // Fields
-    /* the ID of the locality in which the greeting used */
+    /*
+    the ID of the locality in which the greeting used
+    */
     private int localityID;
 
-    /* the name of the locality in which the greeting used */
+    /*
+    the name of the locality in which the greeting used
+    */
     private String localityName;
 
-    /* the ascii greeting which is used for the locality */
+    /*
+    the ascii greeting which is used for the locality
+    */
     private String asciiGreeting;
 
-    /* the uni-code greeting which is used for the locality */
+    /*
+    the uni-code greeting which is used for the locality
+    */
     private String unicodeGreeting;
 
-    /* the format string with the greeting inserted into the format */
+    /*
+    the format string with the greeting inserted into the format
+    */
     private String formatStr;
 
     // Constructors
@@ -53,7 +63,8 @@ public class Greeting {
      * @param unicodeGreeting the uni-code greeting which is used for the locality
      * @param formatStr the string with the greeting inserted into the format
      */
-    public Greeting(int localityID, String localityName, String asciiGreeting, String unicodeGreeting, String formatStr) {
+    public Greeting(int localityID, String localityName, String asciiGreeting,
+                    String unicodeGreeting, String formatStr) {
         this.localityID = localityID;
         this.localityName = localityName;
         this.asciiGreeting = asciiGreeting;
@@ -74,7 +85,7 @@ public class Greeting {
      * Get the unicode format string.
      * @return the unicode format string
      */
-    public String getFormatStr(){
+    public String getFormatStr() {
         return String.format(this.formatStr, this.unicodeGreeting);
     }
 
