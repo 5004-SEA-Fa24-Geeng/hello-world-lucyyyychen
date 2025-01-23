@@ -29,9 +29,9 @@ classDiagram
         + Greeter(String name, int locality)
         + getName(): String
         + getLocality(): int
-        + setLocality(int locality)
+        + setLocality(int locality): void
         + greet(): String
-        - getLocalityString(): String
+        + getLocalityString(): String
         + hashCode(): int
         + equals(Object obj): boolean
         + toString(): String
@@ -45,14 +45,16 @@ classDiagram
         + getName(): String
         + getLocality(): int
         + checkRunAgain(): boolean
-        + printGreeting(String greeting)
+        + printGreeting(String greeting): void
 
     }
 ```
 
 ### Program Flow
-- Write a short paragraph detailing the flow of the program in your own words. This is to help you understand / trace the code (and give you practice of something called a code walk that will be required in this course).
-- AlohaWorld contains the main method, which executes the methods defined in other classes. ConsoleView interacts with the user and uses methods in Greeter. Greeter contains all detailed information include name/language/greetings. 
+##### Write a short paragraph detailing the flow of the program in your own words. This is to help you understand / trace the code (and give you practice of something called a code walk that will be required in this course).
+- The program starts in AlohaWorld, where the main method initializes a ConsoleView object and executes the code with the objects and methods defined in other classes.
+- In ConsoleView, the user can provide a name, selects a locality, view the greeting, and decide if they want to continue. 
+- In this process, the method greet() of Greeter is used to generate different greetings.
 
 ## Assignment Questions
 
